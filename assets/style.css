@@ -1,8 +1,9 @@
+/* Importation d'une police d'écriture*/
 @font-face {
     font-family: josefin ;
     src: url(./font/Josefin_Sans/JosefinSans-VariableFont_wght.ttf);
 }
-body{
+body {
     background-color: rgb(65, 64, 64);
 }
 header{
@@ -11,35 +12,67 @@ header{
     font-family: josefin;
     margin-bottom: 5rem;
 }
-
-/*Parent element*/
+/*Flex container (parent éléments)*/
 .container{
     background-color: rgb(195, 193, 193);
-    width: 800px;
+    width: 100%; /*le flex container occupe toute la largeur de la page*/
     height: 400px;
     border-radius: 15px;
-    /*Flexbox*/
+
+    display: flex;
+
+    /*justify-content: flex-start;*//* alignement au début de la ligne-axe*/
+    /*justify-content: center ;*//* alignement au centre de la ligne-axe*/
+    /*justify-content: flex-end;*//* alignement à la fin de la ligne-axe*/
+    /*justify-content: space-between; *//*.....*/
+    /*justify-content: space-around; *//*....*/
+    /*justify-content: space-evenly; *//*....*/
+
+
+    /*align-items: flex-start; aligne les éléments vers le haut du container*/
+    /*align-items: flex-end; aligne les éléments vers le bas du container*/
+    /*align-items: center;*//* aligne les éléments au centre du container*/
+    /*align-items: stretch ;*//*les éléments occupent tout l'espace du container. Pour que cette propriété s'applique, mettre "heigh:auto" pour la div concernée*/
+    /*align-items: baseline;*//*......*/
+
+
+    /*align-content: flex-start;*//*aligne tout le contenu en HAUT à gauche du container*/
+    /*align-content: flex-end;*//*aligne tout le contenu en bas à gauche du container*/
+    /*align-content: center;*//*aligne tout le contenu au centre du container, avec un alignemet à gauche des éléments*/
+    /*align-content: stretch;*//*les éléments occupent tout le container*/
+    /*align-content: space-between;*/ /*.........*/
+    /*align-content: space-around;*//*.........*/
 
 }
-/*Child element*/
+/*Flex items (éléments enfants)*/
 .Div1 {
-    background-color: rgb(93, 3, 116);
+    background-color: rgb(133, 71, 148);
+    border: rgb(93, 3, 116) solid 5px;/* bordure-contour : couleur, type de trait, épaisseur*/
     width: 200px;
-    height: 100px ;
-    border-radius: 10px;
-    /*Flexbox*/
+    height: 150px ;
+    border-radius: 10px;/*arrondi du contour*/
+    
 }
 .Div2{
-    background-color: rgb(0, 147, 206);
+    background-color: rgb(93, 176, 209);
+    border: rgb(3, 132, 184) solid 5px;
     width: 200px;
-    height: 100px ;
+    height: 150px ;
     border-radius: 10px;
-    /*Flexbox*/
+    
 }
 .Div3{
-    background-color: rgb(2, 125, 57);
+    background-color: rgb(83, 186, 129);
+    border: rgb(2, 125, 57) solid 5px;
     width: 200px;
-    height: 100px ;
+    height: 150px ;
     border-radius: 10px;
-    /*Flexbox*/
+    
 }
+
+
+
+
+
+
+
