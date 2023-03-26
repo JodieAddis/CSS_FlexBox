@@ -4,7 +4,7 @@
     src: url(./font/Josefin_Sans/JosefinSans-VariableFont_wght.ttf);
 }
 body {
-    background-color: rgb(65, 64, 64);
+    background-color: rgb(39, 39, 39);
 }
 header{
     color: white;
@@ -21,31 +21,37 @@ header{
 
     display: flex;
 
-    /*justify-content: flex-start;*//* alignement au début de la ligne-axe*/
-    /*justify-content: center ;*//* alignement au centre de la ligne-axe*/
-    /*justify-content: flex-end;*//* alignement à la fin de la ligne-axe*/
-    /*justify-content: space-between; *//*.....*/
-    /*justify-content: space-around; *//*....*/
-    /*justify-content: space-evenly; *//*....*/
+    /*flex-direction: column;*/ /*répartition des éléments en colonne(s)*/
+    /*flex-direction: column-reverse;*/ /*répartition des éléments en colonnes, en sens inversé*/
+    /*flex-direction: row;*/ /*répartition des éléments sur une ligne*/
+    /*flex-direction: row-reverse;*/ /*répartition des éléments sur une ligne, en sens inversé*/
+        /*gap: 20px ;*/ /*la propriété "gap" permet d'imposer un espace entre les éléments*/
+
+    /*justify-content: flex-start;*/ /* alignement au début de la ligne-axe*/
+    /*justify-content: center ;*/ /* alignement au centre de la ligne-axe*/
+    /*justify-content: flex-end;*/ /* alignement à la fin de la ligne-axe*/
+    /*justify-content: space-between;*/ /*répartition uniforme des éléments, le 1er au début de la ligne et le dernier à la fin*/
+    /*justify-content: space-around;*/ /*similaire à between, cependant il y aune unité d'espacement avant le premier élément et après le dernier*/
+    /*justify-content: space-evenly;*/ /*répartition des éléments avec un espace égal entre chacun d'entre eux*/
 
 
-    /*align-items: flex-start; aligne les éléments vers le haut du container*/
-    /*align-items: flex-end; aligne les éléments vers le bas du container*/
-    /*align-items: center;*//* aligne les éléments au centre du container*/
-    /*align-items: stretch ;*//*les éléments occupent tout l'espace du container. Pour que cette propriété s'applique, mettre "heigh:auto" pour la div concernée*/
-    /*align-items: baseline;*//*......*/
+    /*align-items: flex-start;*/ /*aligne les éléments vers le haut du container*/
+    /*align-items: flex-end;*/ /*aligne les éléments vers le bas du container*/
+    /*align-items: center;*/ /*aligne les éléments au centre du container*/
+    /*align-items: stretch ;*/ /*les éléments occupent tout l'espace du container. Pour que cette propriété s'applique, mettre "heigh:auto" pour la div concernée*/
+    /*align-items: baseline;*/ /*aligne les éléments selon leur propre centre*/
 
 
-    /*align-content: flex-start;*//*aligne tout le contenu en HAUT à gauche du container*/
-    /*align-content: flex-end;*//*aligne tout le contenu en bas à gauche du container*/
-    /*align-content: center;*//*aligne tout le contenu au centre du container, avec un alignemet à gauche des éléments*/
-    /*align-content: stretch;*//*les éléments occupent tout le container*/
-    /*align-content: space-between;*/ /*.........*/
-    /*align-content: space-around;*//*.........*/
-
+    /*align-content: flex-start;*/ /*aligne tout le contenu en HAUT à gauche du container*/
+    /*align-content: flex-end;*/ /*aligne tout le contenu en bas à gauche du container*/
+    /*align-content: center;*/ /*aligne tout le contenu au centre du container, avec un alignemet à gauche des éléments*/
+    /*align-content: stretch;*/ /*les éléments s'étirent pour occuper tout l'espace du container*/
+    /*align-content: space-between;*/ /*alignement uniforme avec un espace égal autour de chaque ligne*/
+    /*align-content: space-around;*/ /*alignement uniforme avec un espace égal autour d'eux*/
 }
+
 /*Flex items (éléments enfants)*/
-.Div1 {
+.item1 {
     background-color: rgb(133, 71, 148);
     border: rgb(93, 3, 116) solid 5px;/* bordure-contour : couleur, type de trait, épaisseur*/
     width: 200px;
@@ -53,7 +59,7 @@ header{
     border-radius: 10px;/*arrondi du contour*/
     
 }
-.Div2{
+.item2 {
     background-color: rgb(93, 176, 209);
     border: rgb(3, 132, 184) solid 5px;
     width: 200px;
@@ -61,13 +67,26 @@ header{
     border-radius: 10px;
     
 }
-.Div3{
+.item3 {
     background-color: rgb(83, 186, 129);
     border: rgb(2, 125, 57) solid 5px;
     width: 200px;
     height: 150px ;
     border-radius: 10px;
-    
+}
+
+
+/*Apparence footer*/
+footer{
+    color: white;
+    text-align: center;
+    font-family: josefin;
+    font-size: 12px;
+    margin-top: 10rem;
+}
+footer a{
+    color: rgb(122, 151, 255);
+    text-decoration: none;
 }
 
 
